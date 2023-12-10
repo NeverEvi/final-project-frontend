@@ -35,24 +35,24 @@
   height: 30vmin;
   transition: 0.5s;
   position:absolute;
-  opacity: 0;
+  
   z-index: 0;
   margin: 0;
-  transform: translate(0%, 80%);
+  transform: translate(0%, 100%);
 }
 
 .App-logo:hover +.App-logo-button {
   background-color: #ff0000;
 }
 .App-logo-container:hover +.App-logo-background {
-  transform: translate(0%, 70%);
+  transform: translate(0%, 100%);
   opacity: 1;
 }
 .App-logo-button:hover {
   background-color: #ff0000;
 }
 .App-logo-button:hover +.App-logo-background {
-  transform: translate(0%, 70%);
+  transform: translate(0%, 100%);
   opacity: 1;
 }
 @media (prefers-reduced-motion: no-preference) {
@@ -112,15 +112,15 @@
 }
 @keyframes App-logo-background-show {
   from {
-    transform: translate(0%, 80%);
+    transform: translate(0%, 110%);
     opacity: 0; z-index: 0;
   }
   90% {
-    transform: translate(0%, 70%);
+    transform: translate(0%, 100%);
     opacity: 1; z-index: 0;
   }
   to {
-    transform: translate(0%, 70%);
+    transform: translate(0%, 100%);
     opacity: 1; z-index: 0;
   }
 }
