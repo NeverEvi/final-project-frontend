@@ -129,3 +129,8 @@
     display: none;
   }
 }
+@media screen and (max-height: 900px) {
+  .App-logo-background {
+    display: none;
+  }
+}
