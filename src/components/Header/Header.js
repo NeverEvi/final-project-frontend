@@ -1,20 +1,59 @@
 import React from 'react';
 import './Header.css';
-import { Route } from 'react-router-dom/cjs/react-router-dom.min';
+import { Route, Link } from 'react-router-dom/cjs/react-router-dom.min';
+import logo from '../../images/Ball_icon.png';
+import grass from '../../images/grass.png'
+import Navigation from '../Navigation/Navigation';
+
 
 function Head () {
 	return (
-		<div className="head">
-			<Route exact path="/">
-        <h1 className="landing-header-title">PokéCard</h1> 
-        <h2 className="landing-header-subtitle">View Pokémon details.</h2>
-        <p className='landing-header-text'>Click the Pokéball to begin</p>
+		<header className="App-header">
+      
+      <Route exact path="/">
+        <div className="landing-head">
+          <h1 className="landing-header-title">PokéCard</h1> 
+          <h2 className="landing-header-subtitle">View Pokémon details.</h2>
+          <p className='landing-header-text'>Click the Pokéball to begin</p>
+          <Link to="/home" className='landing-logo-container'>
+            <img src={logo} className="landing-logo" alt="logo" />
+            <span className='landing-logo-button'></span>
+          </Link>
+        <img src={grass} className='landing-logo-background' alt="grass"/>
+        </div>
       </Route>
+
 			<Route exact path="/home">
-        <h1 className="header-title">PokéCard</h1> 
-        <h2 className="header-subtitle">View Pokémon details.</h2>
+        <div className='head'>
+          <h1 className="header-title">PokéCard</h1> 
+          <div className='header-right'>
+            <Link className="header-right-signup" to="/signup">Sign Up</Link>
+          <Navigation/>
+          </div>
+        </div>
       </Route>
-    </div>
+
+      <Route exact path="/cards">
+        <div className='head'>
+          <h1 className="header-title">PokéCard</h1> 
+          <div className='header-right'>
+            <Link className="header-right-signup" to="/signup">Sign Up</Link>
+          <Navigation/>
+          </div>
+        </div>
+      </Route>
+
+      <Route exact path="/signup">
+        <div className='head'>
+          <h1 className="header-title">PokéCard</h1> 
+          <div className='header-right'>
+            
+          <Navigation/>
+          </div>
+        </div>
+      </Route>
+        
+        </header>
   )
 }
 

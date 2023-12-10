@@ -1,8 +1,57 @@
+
+.head {
+  background-color: #101114;
+  min-height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: 'Pokemon Solid', sans-serif;
+  letter-spacing: 0.08em;                                             
+  padding-top: 5px;
+  font-size: calc(10px + 0.5vmin);
+}
+.landing-head {
+  background-color: #101114;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Pokemon Solid', sans-serif;
+  letter-spacing: 0.08em;                                             
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+.header-right {
+  display: flex;
+  flex-direction: row-reverse;
+  min-width: 20%;
+  justify-content: space-around;
+}
+.header-right-signup {
+  text-decoration: none;
+  font-size: 18px;
+  color: #61dafb;
+  border-radius: 20%;
+  color: #61dafb;
+  border: 1px solid;
+  padding: 0 5px;
+  margin-top: 3px;
+  line-height: 1.5em;
+  transition: 0.3s;
+}
+.header-right-signup:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 0.2rem 0.2rem #61dafb;
+  text-shadow: 0 0 0.1rem #61dafb;
+  background-color: rgba(60, 98, 100, 0.637);
+}
+
 .header-title {
     letter-spacing: 0.2em;
     margin: 0; 
     line-height: 1em;
     text-shadow: 0px 0px 5px rgb(0, 0, 0);
+    padding: 0 0 0 10px;
   }
   .header-subtitle {
     margin: 0;
@@ -19,7 +68,7 @@
   .landing-header-title {
     letter-spacing: 0.2em;
     margin: 0; 
-    line-height: 1em;
+    line-height: 2em;
     text-shadow: 0px 0px 5px rgb(0, 0, 0);
   }
   .landing-header-subtitle {
@@ -27,10 +76,132 @@
     line-height: 2em;
     text-shadow: 0px 0px 5px rgb(0,0,0);
   }
+  .landing-header-text {
+    margin: 0;
+    font-size: 15px;
+    line-height: 2em;
+    text-shadow: 0px 0px 5px rgb(0,0,0);
+  }
+
+  .landing-logo-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    z-index: 1;
+  }
+  .landing-logo {
+    height: 40vmin;
+    transition: 0.5s;
+    z-index: 2;
+    position: relative;
+    pointer-events: all;
+    
+  }
+  .landing-logo-button {
+    height: 7vmin;
+    width: 7vmin;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+    transition: 0.5s;
+    position:absolute; 
+    z-index: 3;
+  }
+  .landing-logo-background {
+    height: 30vmin;
+    transition: 0.5s;
+    position:absolute;
+    display: block;
+    opacity: 0;
+    z-index: 0;
+    margin: 0 auto;
+    transform: translate(0%, 90%);
+  }
+  
+  .landing-logo:hover +.landing-logo-button {
+    background-color: #ff0000;
+  }
+  .landing-logo-container:hover +.landing-logo-background {
+    transform: translate(0%, 90%);
+    opacity: 1;
+  }
+  .landing-logo-button:hover {
+    background-color: #ff0000;
+  }
+  .landing-logo-button:hover +.landing-logo-background {
+    transform: translate(0%, 90%);
+    opacity: 1;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .landing-logo-container:hover {
+      animation: landing-logo-shake 1 1s linear;
+      transform-origin: 50% 100%;
+    }
+    .landing-logo:hover +.landing-logo-button {
+      animation: landing-logo-button-glow infinite 1s linear;
+    }
+    .landing-logo-container:hover ~ .landing-logo-background {
+      animation: landing-logo-background-show 1 0.8s linear;
+    }
+    .landing-logo-button:hover ~ .landing-logo-background {
+      animation: landing-logo-background-show 1 0.8s linear;
+    }
+    .landing-logo-button:hover {
+      animation: landing-logo-button-glow infinite 1s linear;
+    }
+    
+  }
+  
+  @keyframes landing-logo-shake {
+    0% {transform: rotate(0deg);}
+    20% {transform: rotate(10deg);}
+    40% {transform: rotate(-10deg);}
+    60% {transform: rotate(5deg);}
+    80% {transform: rotate(-5deg);}
+    100% {transform: rotate(0deg);}
+  }
+  @keyframes landing-logo-button-glow {
+    from {
+      box-shadow: none;
+    }
+    45% {
+      box-shadow: 0 0 0.2em 0.2em #ff0000;
+    }
+    55% {
+      box-shadow: 0 0 0.2em 0.2em #ff0000;
+    }
+    to {
+      box-shadow: none;
+    }
+  }
+  @keyframes landing-logo-background-show {
+    from {
+      transform: translate(0%, 100%);
+      opacity: 0; z-index: 0;
+    }
+    90% {
+      transform: translate(0%, 90%);
+      opacity: 1; z-index: 0;
+    }
+    to {
+      transform: translate(0%, 90%);
+      opacity: 1; z-index: 0;
+    }
+  }
 
   @media screen and (max-width: 300px) {
     .head {
       transform: scale(60%);
     }
-
+  }
+  @media screen and (max-width: 400px) {
+    .landing-logo-background {
+      display: none;
+    }
+  }
+  @media screen and (max-height: 900px) {
+    .landing-logo-background {
+      display: none;
+    }
   }
