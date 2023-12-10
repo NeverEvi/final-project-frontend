@@ -1,0 +1,12 @@
+.card {
+    min-height: 19vmin;
+    min-width: 15vmin;
+    border-radius: 10px;
+    background-color: brown;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-title {
+    font-size: calc(10px + 1vmin);
+}

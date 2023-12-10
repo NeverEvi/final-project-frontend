@@ -5,8 +5,9 @@ import Head from '../Header/Header';
 import Main from '../Main/Main';
 import Footer from '../Footer/Footer';
 
-
 function App() {
+
+  
   return (
     <div className="App">
       <link href="https://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet"/>

@@ -4,19 +4,22 @@ import { Route } from 'react-router-dom/cjs/react-router-dom.min';
 import CardSection from '../CardSection/CardSection';
 import Card from '../Card/Card'
 
+
+
 function Main () {
   return (
     <>
     <Route exact path="/home">
     <div className="main">
-      <h1>fak u</h1>
+      <h1>display  here</h1>
       <p>
-        fuck u
+        home page?
       </p>
     </div>
     </Route>
     <Route exact path="/cards">
     <div className="main">
+      
       <CardSection>
         <Card/>
         <Card/>

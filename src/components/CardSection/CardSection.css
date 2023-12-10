@@ -1,0 +1,26 @@
+.card-items {
+    display: flex;
+    gap: 20px;
+}
+.card-new {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 19vmin;
+    min-width: 15vmin;
+    border-radius: 10px;
+    border: 2px solid red;
+    
+}
+.card-new-text {
+    font-size: calc(10px + 1vmin);
+}
+.card-new-button {
+    max-height: 10vmin;
+    background-color: #101114;
+    border: none;
+}
+
+.card-new-button-image {
+    max-height: 10vmin;
+}
