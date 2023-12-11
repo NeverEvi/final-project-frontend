@@ -17,4 +17,5 @@
   min-width: 15%;
   align-items: center;
   gap:10px;
-}
+  margin: 0 10px 0 0;
+} 

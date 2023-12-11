@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.css';
-import { Route, Link } from 'react-router-dom/cjs/react-router-dom.min';
+import { Route, Link, Switch } from 'react-router-dom/cjs/react-router-dom.min';
 import logo from '../../images/Ball_icon.png';
 import grass from '../../images/grass.png'
 import Navigation from '../Navigation/Navigation';
@@ -9,7 +9,7 @@ import Navigation from '../Navigation/Navigation';
 function Head () {
 	return (
 		<header className="App-header">
-      
+      <Switch>
       <Route exact path="/">
         <div className="landing-head">
           <h1 className="landing-header-title">PokéCard</h1> 
@@ -52,7 +52,16 @@ function Head () {
           </div>
         </div>
       </Route>
-        
+      <Route path='*'>
+        <div className='head'>
+          <h1 className="header-title">PokéCard</h1> 
+          <div className='header-right'>
+            
+          <Navigation/>
+          </div>
+        </div>
+      </Route>
+      </Switch>
         </header>
   )
 }

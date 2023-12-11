@@ -13,7 +13,8 @@ function CardSection({ children }) {
 				console.log(data.species.name)
 				console.log(data.sprites.front_default)
 				console.log(data.types[0].type.name)
-				console.log(data.types[1] ? data.types[1].type.name : "none")
+				const type2 = data.types[1] ? data.types[1].type.name : "none"
+				console.log(type2)
 			})
 			.catch((data) => {
 				console.error(data);
