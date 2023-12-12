@@ -21,7 +21,7 @@ function CardSection({ children }) {
 			});
 		getFlavor(randomInteger)
 			.then((data) => {
-				console.log(data.flavor_text_entries[0])
+				console.log(data.flavor_text_entries)
 				console.log(data.flavor_text_entries[0].flavor_text)
 			})
 	}

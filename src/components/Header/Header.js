@@ -43,6 +43,16 @@ function Head () {
         </div>
       </Route>
 
+      <Route exact path="/search">
+        <div className='head'>
+          <h1 className="header-title">PokéCard</h1> 
+          <div className='header-right'>
+            <Link className="header-right-signup" to="/signup">Sign Up</Link>
+          <Navigation/>
+          </div>
+        </div>
+      </Route>
+
       <Route exact path="/signup">
         <div className='head'>
           <h1 className="header-title">PokéCard</h1> 
@@ -52,6 +62,7 @@ function Head () {
           </div>
         </div>
       </Route>
+      
       <Route path='*'>
         <div className='head'>
           <h1 className="header-title">PokéCard</h1> 

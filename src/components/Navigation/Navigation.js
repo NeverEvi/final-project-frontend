@@ -21,7 +21,7 @@ function Navigation () {
       </NavLink>
       <NavLink
         className="Nav-link"
-        to="/home"
+        to="/search"
         rel="noopener noreferrer"
       >
         Search

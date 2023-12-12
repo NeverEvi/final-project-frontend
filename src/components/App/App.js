@@ -29,6 +29,12 @@ function App() {
         <Main />
       </Route>
 
+      <Route exact path="/search">
+        <Head />
+        
+        <Main />
+      </Route>
+
       <Route exact path="/signup">
         <Head />
         
