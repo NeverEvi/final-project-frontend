@@ -1,0 +1,108 @@
+.modal__closeButton {
+	background: white center no-repeat;
+	color: black;
+	height: 20px;
+	width: 20px;
+	border: 1px solid black;
+	padding-left: 5px;
+	position: relative;
+	left: 540px;
+	bottom: 100px;
+	z-index: 2;
+	border-radius: 10px;
+}
+.modal__content {
+	background: transparent url(../../images/pokedex.png) center no-repeat;
+	background-size: contain;
+	width: 564px;
+	height: 450px;
+	border-radius: 20px;
+	border-color: black;
+	border-width: 2px;
+	display: flex;
+	align-items: center;
+}
+.modal__image {
+	width: 160px;
+	height: 160px;
+	position: relative;
+	bottom: 10px;
+	left: 50px;
+	z-index: 1;
+	border-radius: 10px 10px 0 0;
+}
+
+.modal__info {
+	padding: 95px 0 0 158px;
+	line-height: 24px;
+	font-size: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	gap: 10px;
+	text-align: center;
+	height: 220px;
+	
+}
+.modal__info-name {
+	margin: 2px 0 5px 0;
+	padding: 0;
+	
+}
+.modal__info-types {
+	display: flex;
+	justify-content: space-around;
+	width: 165px;
+	height: 30px;
+	align-items: center;
+	margin-bottom: 1px;
+}
+.modal__info-types-single {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.modal__info-type {
+	color: aqua;
+	border: 1px solid #aa2222;
+	padding: 2px;
+	border-radius: 10px;
+}
+.modal__deleteButton {
+	color: #aa2222;
+	margin: 0;
+	border-radius: 5px;
+	border: 1px solid blanchedalmond;
+	padding: 2px 6px;
+	line-height: 1rem;
+	font-size: 18px;
+	width: fit-content;
+}
+.modal__element_hidden {
+	visibility: hidden;
+}
+.modal__info-flavor {
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 12px;
+	line-height: 1rem;
+	width: 170px;
+}
+
+.modal {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(255, 255, 255, 0.6);
+	font-family: "Cabinet Grotesk";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 20px;
+}

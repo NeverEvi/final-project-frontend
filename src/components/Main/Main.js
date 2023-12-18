@@ -8,7 +8,7 @@ import Search from '../Search/Search';
 
 
 
-function Main ({cardsList, searchCard, handleGetPokemon, handleGetInfo}) {
+function Main ({cardsList, searchCard, handleGetPokemon, handleGetInfo, handleSelectedCard}) {
   const newCardsList = cardsList;
   return (
     <>
@@ -17,9 +17,22 @@ function Main ({cardsList, searchCard, handleGetPokemon, handleGetInfo}) {
       </Route>
       <Route exact path="/home">
         <div className="main">
-          <h1>display  here</h1>
-          <p>home page?</p>
-          <p>consolidate code for routes!!!</p>
+          <h1 className='main-title'>Welcome to PokéCard</h1>
+          <h2 className='main-subtitle'>Coming soon</h2>
+          <div className='main-todo'>
+            <ul>
+            <li>Generated cards will include a weight, their weight can vary as much as ±68%.</li>
+            
+            <li>Markup will be adjusted for a better overall look.</li>
+            </ul>
+          </div>
+          <h3 className='main-subtitle'>Coming later</h3>
+          <div className='main-todo'>
+            <ul>
+            <li>Ability to log-in and save cards.</li>
+            <li>Descriptions on cards will be filtered for chosen language</li>
+            </ul>
+          </div>
         </div>
       </Route>
 
@@ -27,12 +40,13 @@ function Main ({cardsList, searchCard, handleGetPokemon, handleGetInfo}) {
       <div className="main-cards">
         <CardSection handleGetPokemon={handleGetPokemon}>
           {newCardsList.map((x, i) => (
-            <Card item={x} key={i}/>
+            <Card 
+              item={x} 
+              handleSelectedCard={handleSelectedCard} 
+              key={i}
+            />
           ))}
-          
         </CardSection>
-        <p>Click to view</p>
-        <p>add onclick popup modals for cards</p>
       </div>
       </Route>
 
@@ -40,15 +54,17 @@ function Main ({cardsList, searchCard, handleGetPokemon, handleGetInfo}) {
         <div className="main">
           <Search handleGetInfo={handleGetInfo}></Search>
           {searchCard.map((x, i) => (
-            <Card item={x} key={i}/>
+            <Card item={x} 
+            handleSelectedCard={handleSelectedCard}
+            key={i}/>
           ))}
-          <p>display popup for pokemon</p>
         </div>
       </Route>
 
       <Route exact path="/signup">
       <div className="main">
         <h1>signup</h1>
+        <h2>coming soon</h2>
       </div>
       </Route>
 

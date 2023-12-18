@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-//import './Card.css';
+import './Search.css';
 
 function Search ({handleGetInfo}) {
     const [id, setId] = useState("")
@@ -12,14 +12,15 @@ function Search ({handleGetInfo}) {
         const id_low = id.toLowerCase()
         console.log(id_low)
         handleGetInfo(id_low)
+            
     }
     return (
         <div className='search'>
             <form className='search-form' onSubmit={handleSubmit}>
-                <h1>Search</h1>
+                <p className='search-instruction'>Search a pokemon by number (1-1000) or by name</p>
                 <label>Pokemon:</label>
-                <input type="text" id="name" onChange={handleId} required/>  
-                <button type="submit" >Submit</button>
+                <input className='search-input' type="text" id="name" onChange={handleId} required/>  
+                <button type="submit" className='search-submit'>Submit</button>
             </form>
         </div>
         )

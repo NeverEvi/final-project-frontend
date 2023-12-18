@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     min-height: 19vmin;
     min-width: 15vmin;
     border-radius: 10px;
@@ -22,27 +23,28 @@
 .card-title {
     font-size: calc(5px + 1vmin);
     line-height: 1em;
-    flex: 0.5;
+    letter-spacing: 0.22em; 
     border: 1px solid white;
     border-radius: 10%;
-    padding: 2px 0 2px 0 ;
+    padding: 2px 5px 5px 5px;
     margin: 10px 0 10px 5px;
     align-self: flex-start;
 }
 .card-image {
     border: 1px solid white;
-    flex: 2;
     border-radius: 10%;
-    max-width: 13vmin;
+    width: 13vmin;
 }
 .card-types {
     display: flex;
+    justify-content: space-evenly;
     max-height: 10vmin;
-    flex: 1;
+    align-items: self-end;
+    
 }
 .card-type {
     border: 1px solid white;
-    
+    height: fit-content;
     font-size: 10px;
     line-height: 1.5em;
     border-radius: 10%;
