@@ -1,16 +1,20 @@
-import React from 'react';
+
 import './Main.css';
 import { Route, Switch } from 'react-router-dom/cjs/react-router-dom.min';
 import CardSection from '../CardSection/CardSection';
-import Card from '../Card/Card'
 import Page404 from '../Page404/Page404';
+import Card from '../Card/Card'
+import Search from '../Search/Search';
 
 
 
-function Main () {
+function Main ({cardsList, searchCard, handleGetPokemon, handleGetInfo}) {
+  const newCardsList = cardsList;
   return (
     <>
     <Switch>
+      <Route exact path="/">
+      </Route>
       <Route exact path="/home">
         <div className="main">
           <h1>display  here</h1>
@@ -20,21 +24,25 @@ function Main () {
       </Route>
 
       <Route exact path="/cards">
-      <div className="main">
-        <CardSection>
-          <Card/>
-          <Card/>
+      <div className="main-cards">
+        <CardSection handleGetPokemon={handleGetPokemon}>
+          {newCardsList.map((x, i) => (
+            <Card item={x} key={i}/>
+          ))}
+          
         </CardSection>
         <p>Click to view</p>
-        <p>fix flex properties for more items</p>
+        <p>add onclick popup modals for cards</p>
       </div>
       </Route>
 
       <Route exact path="/search">
         <div className="main">
-          <h1>Search</h1>
-          <p>input</p>
-          <p>display popup</p>
+          <Search handleGetInfo={handleGetInfo}></Search>
+          {searchCard.map((x, i) => (
+            <Card item={x} key={i}/>
+          ))}
+          <p>display popup for pokemon</p>
         </div>
       </Route>
 

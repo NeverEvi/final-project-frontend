@@ -1,7 +1,7 @@
 //import "./CardModal.css";
 import React, { useContext } from "react";
 
-const CardModal = ({ selectedCard, onClose, onClickout, onDelete }) => {
+const CardModal = ({ selectedCard, flavor, onClose, onClickout, onDelete }) => {
 	//const deleteButtonClassName = `modal__deleteButton ${
 	//	!isOwn && "modal__deleteButton_hidden"
 	//}`;
@@ -14,7 +14,7 @@ const CardModal = ({ selectedCard, onClose, onClickout, onDelete }) => {
 					className="modal__closeButton"
 				></button>
 				<img
-					src={selectedCard.imageUrl}
+					src={selectedCard.sprite}
 					alt={selectedCard.name}
 					className="modal__image"
 				/>
@@ -29,8 +29,8 @@ const CardModal = ({ selectedCard, onClose, onClickout, onDelete }) => {
 							Set Free
 						</p>
 					</div>
-                    <div>Type1 Type2</div>
-					<div>Flavor text</div>
+                    <div>{selectedCard.type1} {selectedCard.type2}</div>
+					<div>{flavor}</div>
 				</div>
 			</div>
 		</div>

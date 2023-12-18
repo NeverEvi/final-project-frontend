@@ -1,6 +1,9 @@
 .card-items {
+    margin-top: 30px;
     display: flex;
     gap: 20px;
+    max-width: 90vmin;
+    flex-wrap: wrap;
 }
 .card-new {
     display:flex;
