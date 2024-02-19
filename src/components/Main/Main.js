@@ -18,21 +18,8 @@ function Main ({cardsList, searchCard, handleGetPokemon, handleGetInfo, handleSe
       <Route exact path="/home">
         <div className="main">
           <h1 className='main-title'>Welcome to PokéCard</h1>
-          <h2 className='main-subtitle'>Coming soon</h2>
-          <div className='main-todo'>
-            <ul>
-            <li>Generated cards will include a weight, their weight can vary as much as ±68%.</li>
-            
-            <li>Markup will be adjusted for a better overall look.</li>
-            </ul>
-          </div>
-          <h3 className='main-subtitle'>Coming later</h3>
-          <div className='main-todo'>
-            <ul>
-            <li>Ability to log-in and save cards.</li>
-            <li>Descriptions on cards will be filtered for chosen language</li>
-            </ul>
-          </div>
+          <h2 className='main-subtitle'>View your PokéCards in the "Cards" section</h2>
+          
         </div>
       </Route>
 

@@ -20,8 +20,9 @@
 }
 .card-new-button {
     max-height: 10vmin;
-    background-color: #101114;
+    background-color: rgb(65, 65, 65);
     border: none;
+
 }
 
 .card-new-button-image {
