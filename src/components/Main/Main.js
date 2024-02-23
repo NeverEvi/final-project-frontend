@@ -11,7 +11,7 @@ import Search from '../Search/Search';
 function Main ({cardsList, searchCard, handleGetPokemon, handleGetInfo, handleSelectedCard}) {
   const newCardsList = cardsList;
   return (
-    <>
+    <main>
     <Switch>
       <Route exact path="/">
       </Route>
@@ -61,7 +61,7 @@ function Main ({cardsList, searchCard, handleGetPokemon, handleGetInfo, handleSe
           </div>
       </Route>
     </Switch>
-    </>
+    <main/>
   )
 }
 
