@@ -204,6 +204,18 @@
       transform: scale(60%);
     }
   }
+  @media screen and (max-width: 470px) {
+    .head {
+      flex-direction: column;
+      text-align: center;
+    }
+    .header-title {
+      padding: 0 0 20px 0;
+    }
+    .header-right {
+      flex-direction: column-reverse;
+    }
+  }
   @media screen and (max-width: 400px) {
     .landing-logo-background {
       display: none;
