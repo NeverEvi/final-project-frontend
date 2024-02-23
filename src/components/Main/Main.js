@@ -11,20 +11,21 @@ import Search from '../Search/Search';
 function Main ({cardsList, searchCard, handleGetPokemon, handleGetInfo, handleSelectedCard}) {
   const newCardsList = cardsList;
   return (
-    <main>
+    <>
     <Switch>
       <Route exact path="/">
       </Route>
       <Route exact path="/home">
-        <div className="main">
+        <main className="main">
           <h1 className='main-title'>Welcome to PokéCard</h1>
           <h2 className='main-subtitle'>View your PokéCards in the "Cards" section</h2>
           
-        </div>
+        </main>
       </Route>
 
       <Route exact path="/cards">
-      <div className="main-cards">
+      <main className='main'>
+        <div className="main-cards">
         <CardSection handleGetPokemon={handleGetPokemon}>
           {newCardsList.map((x, i) => (
             <Card 
@@ -35,33 +36,34 @@ function Main ({cardsList, searchCard, handleGetPokemon, handleGetInfo, handleSe
           ))}
         </CardSection>
       </div>
+      </main>
       </Route>
 
       <Route exact path="/search">
-        <div className="main">
+        <main className="main">
           <Search handleGetInfo={handleGetInfo}></Search>
           {searchCard.map((x, i) => (
             <Card item={x} 
             handleSelectedCard={handleSelectedCard}
             key={i}/>
           ))}
-        </div>
+        </main>
       </Route>
 
       <Route exact path="/signup">
-      <div className="main">
+      <main className="main">
         <h1>signup</h1>
         <h2>coming soon</h2>
-      </div>
+      </main>
       </Route>
 
       <Route path='*'>
-        <div className='main'>
+        <main className='main'>
           <Page404/>
-          </div>
+          </main>
       </Route>
     </Switch>
-    </main>
+    </>
   )
 }
 
