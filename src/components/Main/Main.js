@@ -61,7 +61,7 @@ function Main ({cardsList, searchCard, handleGetPokemon, handleGetInfo, handleSe
           </div>
       </Route>
     </Switch>
-    <main/>
+    </main>
   )
 }
 
