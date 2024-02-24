@@ -118,7 +118,6 @@ useEffect(() => {
 
   return (
     <div className="app">
-      <link href="https://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet"/>
       <Route path="/">        
         <Head />
         <Main 

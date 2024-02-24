@@ -1,3 +1,5 @@
+
+
 .main {
     background-color: #101114;
     min-height: 100vh;
@@ -28,6 +30,7 @@
   .main-title {
     letter-spacing: 0.2em;
     margin: 0; 
+    text-align: center;
     line-height: 2em;
     text-shadow: 5px 5px 5px rgb(34, 80, 141),
      -5px -5px 5px rgb(34, 80, 141),
@@ -38,6 +41,7 @@
   .main-subtitle {
     margin: 0 0 10px 0;
     line-height: 2em;
+    text-align: center;
     text-shadow: 3px 3px 5px rgb(34, 80, 141),
      -3px -3px 5px rgb(34, 80, 141),
      -3px 3px 5px rgb(34, 80, 141),
