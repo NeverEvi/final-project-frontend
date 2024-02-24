@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/final-project-frontend/static/css/main.173296e0.css",
-    "main.js": "/final-project-frontend/static/js/main.5cd356ed.js",
+    "main.css": "/final-project-frontend/static/css/main.ca2112c0.css",
+    "main.js": "/final-project-frontend/static/js/main.2c86919b.js",
     "static/media/pokedex.png": "/final-project-frontend/static/media/pokedex.5018baf6538f92487eda.png",
+    "static/media/PokemonSolid.ttf": "/final-project-frontend/static/media/PokemonSolid.deb4959112ab0eb9c5a4.ttf",
     "static/media/Ball_icon.png": "/final-project-frontend/static/media/Ball_icon.8f7b95ec2f978d545895.png",
     "index.html": "/final-project-frontend/index.html",
-    "main.173296e0.css.map": "/final-project-frontend/static/css/main.173296e0.css.map",
-    "main.5cd356ed.js.map": "/final-project-frontend/static/js/main.5cd356ed.js.map"
+    "main.ca2112c0.css.map": "/final-project-frontend/static/css/main.ca2112c0.css.map",
+    "main.2c86919b.js.map": "/final-project-frontend/static/js/main.2c86919b.js.map"
   },
   "entrypoints": [
-    "static/css/main.173296e0.css",
-    "static/js/main.5cd356ed.js"
+    "static/css/main.ca2112c0.css",
+    "static/js/main.2c86919b.js"
   ]
 }
