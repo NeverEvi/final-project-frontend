@@ -12,6 +12,10 @@ function Main ({cardsList, searchCard, handleGetPokemon, handleGetInfo, handleSe
   const newCardsList = cardsList;
   return (
     <>
+    <div className="marquee">
+	    <p>Hello, welcome to PokéCard V 1.0.1!</p>
+    </div>
+
     <Switch>
       <Route exact path="/">
       </Route>

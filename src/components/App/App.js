@@ -34,7 +34,6 @@ function App() {
   const handleGetPokemon = () => {
 		const max = 1000;
 		const randomInteger = Math.floor(Math.random() * max)+1;
-		console.log(randomInteger);
 		getPokemon(randomInteger)
 			.then((data) => {
         const name = data.species.name;
