@@ -54,7 +54,7 @@
 	display: flex;
 	justify-content: space-around;
 	width: 165px;
-	height: 30px;
+	height: 10px;
 	align-items: center;
 	margin-bottom: 1px;
 }
@@ -105,4 +105,43 @@
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 20px;
+}
+
+@media screen and (max-width: 580px) {
+	.modal__content {
+		background: #00000063;
+		flex-direction: column;
+		border: 1px solid #aa2222;
+		width: 90vw;
+	}
+	.modal__info {
+		justify-content: space-around;
+		padding: 25px 0 0 0;
+	}
+	.modal__info-flavor {
+		background: #0000008a;
+		border: 1px solid #aa2222;
+		border-radius: 20px;
+		width: 280px;
+		font-size: 16px;
+		padding: 4px;
+	}
+	.modal__info-type {
+		color: aqua;
+		border: 1px solid #aa2222;
+		background: #0000008a;
+		padding: 2px;
+		border-radius: 10px;
+	}
+	.modal__image {
+		bottom: 0;
+		left: 0;
+	}
+	.modal__closeButton {
+		left: 0;
+		bottom: 0;
+	}
+	.modal__deleteButton {
+		background: #ffffff57;
+	}
 }

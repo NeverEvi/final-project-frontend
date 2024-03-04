@@ -1,17 +1,26 @@
 .card-items {
     margin-top: 30px;
     display: flex;
+    justify-content: center;
     gap: 20px;
     max-width: 90vmin;
     flex-wrap: wrap;
+}
+.card-new-container {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    max-width: 90vmin;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .card-new {
     display:flex;
     flex-direction: column;
     align-items: center;
-    min-height: 19vmin;
-    min-width: 15vmin;
-    border-radius: 10px;
+    height: 10vmin;
+    width: 50vmin;
+    overflow: hidden;
     border: 2px solid red;
     
 }
@@ -20,8 +29,9 @@
 }
 .card-new-button {
     max-height: 10vmin;
-    background-color: #101114;
+    background-color: rgb(65, 65, 65);
     border: none;
+
 }
 
 .card-new-button-image {

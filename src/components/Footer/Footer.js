@@ -3,11 +3,11 @@ import './Footer.css';
 
 function Footer () {
   return (
-    <div className="foot">
+    <footer className="foot">
       <p className='foot-text'>
-        NeverEvi 2023
+        NeverEvi 2023-24
       </p>
-    </div>
+    </footer>
   )
 }
 

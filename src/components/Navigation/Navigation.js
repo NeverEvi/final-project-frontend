@@ -4,23 +4,23 @@ import { NavLink } from 'react-router-dom/cjs/react-router-dom.min';
 
 function Navigation () {
   return (
-    <div className="Nav">
+    <div className="nav">
       <NavLink
-          className="Nav-link"
+          className="nav-link"
           to="/home"
           rel="noopener noreferrer"
         >
           Home
         </NavLink>
       <NavLink
-        className="Nav-link"
+        className="nav-link"
         to="/cards"
         rel="noopener noreferrer"
       >
         Cards
       </NavLink>
       <NavLink
-        className="Nav-link"
+        className="nav-link"
         to="/search"
         rel="noopener noreferrer"
       >

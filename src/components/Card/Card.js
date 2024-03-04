@@ -12,7 +12,7 @@ function Card ({item, handleSelectedCard}) {
       <img src={item.sprite} alt={item.name} className='card-image'></img>
       <div className='card-types'>
         <p className='card-type'>{item.type1}</p>
-        {item.type2 ? <p className='card-type'>{item.type2}</p> : <p className='card-type'></p>}
+        {item.type2 ? <p className='card-type'>{item.type2}</p> : <></>}
       </div>
     </div>
   )

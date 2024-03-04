@@ -1,4 +1,8 @@
-.App {
+@font-face {
+  font-family: 'Pokemon Solid';
+  src: url('../../vendor/fonts/PokemonSolid.ttf');
+}
+.app {
   color: #fddf33;
   display: flex;
   flex-direction: column;

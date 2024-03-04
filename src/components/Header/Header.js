@@ -8,7 +8,7 @@ import Navigation from '../Navigation/Navigation';
 
 function Head () {
 	return (
-		<header className="App-header">
+		<header className="app-header">
       <Switch>
       <Route exact path="/">
         <div className="landing-head">

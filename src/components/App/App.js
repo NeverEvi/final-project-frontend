@@ -34,7 +34,6 @@ function App() {
   const handleGetPokemon = () => {
 		const max = 1000;
 		const randomInteger = Math.floor(Math.random() * max)+1;
-		console.log(randomInteger);
 		getPokemon(randomInteger)
 			.then((data) => {
         const name = data.species.name;
@@ -117,8 +116,7 @@ useEffect(() => {
 
 
   return (
-    <div className="App">
-      <link href="https://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet"/>
+    <div className="app">
       <Route path="/">        
         <Head />
         <Main 
